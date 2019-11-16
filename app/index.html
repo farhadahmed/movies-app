@@ -5,14 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
-<body>
+<body ng-controller=mainController>
 	<h1>Movies</h1>
 
 	<form>
-		<input type="text" placeholder="Title">
-		<input type="text" placeholder="Rating">
-		<input type="text" placeholder="Release Date">
-		<input type="text" placeholder="Length">
+		<input type="text" placeholder="Title" ng-model="movie.name">
+		<input type="text" placeholder="Rating" ng-model="movie.rating">
+		<input type="text" placeholder="Release Date" ng-model="movie.releaseDate">
+		<input type="text" placeholder="Length" ng-model="movie.length">
 		<button type="submit">Add Movie</button>
 	</form>
 
